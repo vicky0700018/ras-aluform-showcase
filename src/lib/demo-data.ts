@@ -18,7 +18,7 @@ export const initialServices: Service[] = [
   ['Site Technical Consultancy','Professional technical guidance and on-site engineering support.','06'],
   ['Project Planning','Technical project planning, coordination and execution support.','07'],
   ['Quality & Compliance','Technical quality assessment and documentation support.','08'],
-].map(([title,description,code]) => ({ id: code, title, description, code, status: 'Active' }));
+] as [string,string,string][]).map(([title,description,code]) => ({ id: code, title, description, code, status: 'Active' }));
 export const initialProjects: Project[] = [
   ['modern-residential-tower','Modern Residential Tower','Kolhapur, Maharashtra','Aluform','Structural and aluminium formwork consultancy for a contemporary residential landmark.',heroImage],
   ['commercial-complex','Commercial Complex','Pune, Maharashtra','Engineering','Engineering consultancy supporting efficient commercial development.',buildingImage],
@@ -26,7 +26,7 @@ export const initialProjects: Project[] = [
   ['industrial-facility','Industrial Facility','Maharashtra','Testing','Technical testing and quality assessment for an industrial facility.',deskImage],
   ['urban-residential','Urban Residential Project','Kolhapur','Architecture','Architectural coordination and engineering support for urban living.',buildingImage],
   ['premium-commercial','Premium Commercial Development','Pune','Engineering','Integrated technical consultancy for a premium commercial destination.',heroImage],
-].map(([id,title,location,category,description,image]) => ({ id,title,location,category,description,image,scope:'Technical planning, design review, site coordination and practical execution support.',details:'Engineering review, project documentation, quality assessment and technical consultancy.',status:'Published' }));
+] as [string,string,string,string,string,string][]).map(([id,title,location,category,description,image]) => ({ id,title,location,category,description,image,scope:'Technical planning, design review, site coordination and practical execution support.',details:'Engineering review, project documentation, quality assessment and technical consultancy.',status:'Published' }));
 export const initialGallery: GalleryItem[] = [
   { id:'1', title:'Formwork inspection', category:'Aluform', description:'Aluminium formwork technical review', image:siteImage },
   { id:'2', title:'Structural development', category:'Projects', description:'High-rise construction overview', image:heroImage },
